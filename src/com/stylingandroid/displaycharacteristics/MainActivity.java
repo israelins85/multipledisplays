@@ -1,6 +1,9 @@
 package com.stylingandroid.displaycharacteristics;
 
 import android.app.Activity;
+import android.app.Presentation;
+import android.content.Context;
+import android.hardware.display.DisplayManager;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
@@ -9,6 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity
 {
+	private MyPresentation mPresentation = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -17,6 +21,7 @@ public class MainActivity extends Activity
 		setContentView(R.layout.activity_main);
 		populate(findViewById(R.id.main), getWindowManager()
 				.getDefaultDisplay());
+		multiInit();
 	}
 
 	private static void populate(View v, Display display)
@@ -43,4 +48,40 @@ public class MainActivity extends Activity
 					((int) ((float) metrics.heightPixels / density))));
 		}
 	}
+	
+    private void multiInit()
+    {
+        DisplayManager dm = 
+            (DisplayManager) getSystemService(DISPLAY_SERVICE);
+        if (dm != null)
+        {
+            Display[] displays = 
+                dm.getDisplays(
+                    DisplayManager.DISPLAY_CATEGORY_PRESENTATION);
+            for (Display display : displays)
+            {
+                mPresentation = new MyPresentation(this, display);
+                mPresentation.show();
+            }
+        }
+    }
+ 
+    public class MyPresentation extends Presentation
+    {
+ 
+        public MyPresentation(Context outerContext, 
+            Display display)
+        {
+            super(outerContext, display);
+        }
+ 
+        @Override
+        protected void onCreate(Bundle savedInstanceState)
+        {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            populate(findViewById(R.id.main), 
+                getDisplay());
+        }
+    }
 }
