@@ -1,9 +1,11 @@
 package com.stylingandroid.displaycharacteristics;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Presentation;
 import android.content.Context;
 import android.hardware.display.DisplayManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
@@ -21,7 +23,10 @@ public class MainActivity extends Activity
 		setContentView(R.layout.activity_main);
 		populate(findViewById(R.id.main), getWindowManager()
 				.getDefaultDisplay());
-		multiInit();
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1)
+		{
+			multiInit();
+		}
 	}
 
 	private static void populate(View v, Display display)
@@ -49,7 +54,8 @@ public class MainActivity extends Activity
 		}
 	}
 	
-    private void multiInit()
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
+	private void multiInit()
     {
         DisplayManager dm = 
             (DisplayManager) getSystemService(DISPLAY_SERVICE);
@@ -66,6 +72,7 @@ public class MainActivity extends Activity
         }
     }
  
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     public class MyPresentation extends Presentation
     {
  
