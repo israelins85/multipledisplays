@@ -4,8 +4,9 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Presentation;
 import android.content.Context;
-import android.hardware.display.DisplayManager;
-import android.hardware.display.DisplayManager.DisplayListener;
+import android.media.MediaRouter;
+import android.media.MediaRouter.RouteInfo;
+import android.media.MediaRouter.SimpleCallback;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -16,7 +17,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity
 {
 	private MyPresentation mPresentation = null;
-	private MyDisplayListener mListener = null;
+	private MyCallback mCallback = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -69,29 +70,30 @@ public class MainActivity extends Activity
 	@TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
 	private void multiInit()
 	{
-		DisplayManager dm = (DisplayManager) getSystemService(DISPLAY_SERVICE);
-		if (dm != null)
+		MediaRouter mr = (MediaRouter) getSystemService(MEDIA_ROUTER_SERVICE);
+		if (mr != null)
 		{
-			mListener = new MyDisplayListener();
-			dm.registerDisplayListener(mListener, null);
-			Display[] displays = dm
-					.getDisplays(DisplayManager.DISPLAY_CATEGORY_PRESENTATION);
-			for (Display display : displays)
-			{
-				mPresentation = new MyPresentation(this, display,
-						android.R.style.Theme_Holo_Light_NoActionBar);
-				mPresentation.show();
-			}
+			mCallback = new MyCallback();
+			mr.addCallback(MediaRouter.ROUTE_TYPE_LIVE_VIDEO, mCallback);
+		}
+		RouteInfo info = mr.getSelectedRoute(MediaRouter.ROUTE_TYPE_LIVE_VIDEO);
+		if (info != null && info.isEnabled())
+		{
+			mPresentation = new MyPresentation(this,
+					info.getPresentationDisplay(),
+					android.R.style.Theme_Holo_Light_NoActionBar);
+			mPresentation.show();
 		}
 	}
 
 	@TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
 	private void multiDestroy()
 	{
-		if (mListener != null)
+		if (mCallback != null)
 		{
-			DisplayManager dm = (DisplayManager) getSystemService(DISPLAY_SERVICE);
-			dm.unregisterDisplayListener(mListener);
+			MediaRouter mr = (MediaRouter) getSystemService(MEDIA_ROUTER_SERVICE);
+			mr.removeCallback(mCallback);
+			mCallback = null;
 		}
 	}
 
@@ -114,31 +116,20 @@ public class MainActivity extends Activity
 	}
 
 	@TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
-	private class MyDisplayListener implements DisplayListener
+	private class MyCallback extends SimpleCallback
 	{
 		@Override
-		public void onDisplayAdded(int displayId)
+		public void onRoutePresentationDisplayChanged(MediaRouter router,
+				RouteInfo info)
 		{
-			DisplayManager dm = (DisplayManager) getSystemService(DISPLAY_SERVICE);
-			Display disp = dm.getDisplay(displayId);
-			if (disp != null)
+			if (info != null && info.isEnabled() && mPresentation == null)
 			{
-				mPresentation = new MyPresentation(MainActivity.this, disp,
+				mPresentation = new MyPresentation(MainActivity.this,
+						info.getPresentationDisplay(),
 						android.R.style.Theme_Holo_Light_NoActionBar);
 				mPresentation.show();
 			}
-		}
-
-		@Override
-		public void onDisplayChanged(int displayId)
-		{
-		}
-
-		@Override
-		public void onDisplayRemoved(int displayId)
-		{
-			if (mPresentation != null
-					&& mPresentation.getDisplay().getDisplayId() == displayId)
+			else
 			{
 				mPresentation = null;
 			}
