@@ -77,7 +77,7 @@ public class MainActivity extends Activity
 			mr.addCallback(MediaRouter.ROUTE_TYPE_LIVE_VIDEO, mCallback);
 		}
 		RouteInfo info = mr.getSelectedRoute(MediaRouter.ROUTE_TYPE_LIVE_VIDEO);
-		if (info != null && info.isEnabled())
+		if (info != null && info.isEnabled() && info.getPresentationDisplay() != null)
 		{
 			mPresentation = new MyPresentation(this,
 					info.getPresentationDisplay(),
