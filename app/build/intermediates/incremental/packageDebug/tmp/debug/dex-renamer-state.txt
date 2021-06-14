@@ -1,0 +1,4 @@
+#Mon Jun 14 16:01:33 BRT 2021
+base.0=/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

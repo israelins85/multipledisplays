@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-normal-v4/values-normal-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-normal/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "39",
+                        "endOffsets": "90"
+                    }
+                }
+            ]
+        }
+    ]
+}

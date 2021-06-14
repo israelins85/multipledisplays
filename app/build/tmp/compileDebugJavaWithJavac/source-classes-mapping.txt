@@ -1,0 +1,7 @@
+com/stylingandroid/displaycharacteristics/MainActivity.java
+ com.stylingandroid.displaycharacteristics.MainActivity
+ com.stylingandroid.displaycharacteristics.MainActivity$1
+ com.stylingandroid.displaycharacteristics.MainActivity$MyCallback
+ com.stylingandroid.displaycharacteristics.MainActivity$MyPresentation
+com/stylingandroid/displaycharacteristics/BuildConfig.java
+ com.stylingandroid.displaycharacteristics.BuildConfig
