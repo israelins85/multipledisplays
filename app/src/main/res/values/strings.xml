@@ -4,10 +4,11 @@
     <string name="app_name">Characteristics</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="density_label">Pixel Denisty:</string>
+    <string name="density_label">Pixel Density:</string>
     <string name="size_label">Size:</string>
     <string name="actual_label">Dimensions:</string>
     <string name="density_factor_label">Density factor:</string>
     <string name="device_pixels_label">DP Dimensions:</string>
+    <string name="size">normal</string>
     
 </resources>

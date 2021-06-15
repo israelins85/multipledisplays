@@ -1,25 +1,42 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values-normal-v4_values-normal-v4.arsc.flat",
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values-ldpi-v4_values-ldpi-v4.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-normal/strings.xml",
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values-ldpi/strings.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endColumns": "39",
-                        "endOffsets": "90"
+                        "endColumns": "40",
+                        "endOffsets": "91"
                     }
                 }
             ]
         },
         {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values/styles.xml",
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "8,3,9,6,10,4,5,7",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "315,56,368,213,433,109,162,270",
+                        "endColumns": "52,52,64,56,62,52,50,44",
+                        "endOffsets": "363,104,428,265,491,157,208,310"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,161,226,283,346,399,450",
+                        "endColumns": "52,52,64,56,62,52,50,44",
+                        "endOffsets": "103,156,221,278,341,394,445,490"
+                    }
+                },
+                {
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "6,15",
                         "startColumns": "4,4",
@@ -36,53 +53,21 @@
                         "endColumns": "12,12",
                         "endOffsets": "781,941"
                     }
-                },
-                {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "8,3,9,6,10,4,5,7",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "315,56,368,213,433,109,162,270",
-                        "endColumns": "52,52,64,56,62,52,50,44",
-                        "endOffsets": "363,104,428,265,491,157,208,310"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,108,161,226,283,346,399,450",
-                        "endColumns": "52,52,64,56,62,52,50,44",
-                        "endOffsets": "103,156,221,278,341,394,445,490"
-                    }
                 }
             ]
         },
         {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values-xxhdpi-v4_values-xxhdpi-v4.arsc.flat",
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-xxhdpi/strings.xml",
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values-v11/styles.xml",
                     "from": {
-                        "startLines": "2",
+                        "startLines": "6",
                         "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "42",
-                        "endOffsets": "93"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-v14/styles.xml",
-                    "from": {
-                        "startLines": "7",
-                        "startColumns": "4",
-                        "startOffsets": "220",
-                        "endLines": "9",
+                        "startOffsets": "177",
+                        "endLines": "8",
                         "endColumns": "12",
-                        "endOffsets": "366"
+                        "endOffsets": "309"
                     },
                     "to": {
                         "startLines": "2",
@@ -90,16 +75,91 @@
                         "startOffsets": "55",
                         "endLines": "4",
                         "endColumns": "12",
-                        "endOffsets": "201"
+                        "endOffsets": "187"
                     }
                 }
             ]
         },
         {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat",
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values-tvdpi-v4_values-tvdpi-v4.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-xlarge/strings.xml",
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values-tvdpi/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "41",
+                        "endOffsets": "92"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values-hdpi-v4_values-hdpi-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values-hdpi/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "40",
+                        "endOffsets": "91"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values-xhdpi-v4_values-xhdpi-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values-xhdpi/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "41",
+                        "endOffsets": "92"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values-small-v4_values-small-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values-small/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "38",
+                        "endOffsets": "89"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values-large-v4_values-large-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values-large/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "38",
+                        "endOffsets": "89"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values-xlarge/strings.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -111,100 +171,25 @@
             ]
         },
         {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values-hdpi-v4_values-hdpi-v4.arsc.flat",
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values-xxhdpi-v4_values-xxhdpi-v4.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-hdpi/strings.xml",
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values-xxhdpi/strings.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endColumns": "40",
-                        "endOffsets": "91"
+                        "endColumns": "42",
+                        "endOffsets": "93"
                     }
                 }
             ]
         },
         {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values-large-v4_values-large-v4.arsc.flat",
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values-mdpi-v4_values-mdpi-v4.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-large/strings.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "38",
-                        "endOffsets": "89"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values-ldpi-v4_values-ldpi-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-ldpi/strings.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "40",
-                        "endOffsets": "91"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values-tvdpi-v4_values-tvdpi-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-tvdpi/strings.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "41",
-                        "endOffsets": "92"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values-xhdpi-v4_values-xhdpi-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-xhdpi/strings.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "41",
-                        "endOffsets": "92"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values-small-v4_values-small-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-small/strings.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "38",
-                        "endOffsets": "89"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values-mdpi-v4_values-mdpi-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-mdpi/strings.xml",
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values-mdpi/strings.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -223,17 +208,32 @@
             ]
         },
         {
-            "outputFile": "/Users/israelins/StudioProjects/MultipleDisplays/app/build/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat",
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values-normal-v4_values-normal-v4.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/israelins/StudioProjects/MultipleDisplays/app/src/main/res/values-v11/styles.xml",
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values-normal/strings.xml",
                     "from": {
-                        "startLines": "6",
+                        "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "177",
-                        "endLines": "8",
+                        "startOffsets": "55",
+                        "endColumns": "39",
+                        "endOffsets": "90"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values-v14/styles.xml",
+                    "from": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "220",
+                        "endLines": "9",
                         "endColumns": "12",
-                        "endOffsets": "309"
+                        "endOffsets": "366"
                     },
                     "to": {
                         "startLines": "2",
@@ -241,7 +241,7 @@
                         "startOffsets": "55",
                         "endLines": "4",
                         "endColumns": "12",
-                        "endOffsets": "187"
+                        "endOffsets": "201"
                     }
                 }
             ]

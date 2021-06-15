@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.stylingandroid.displaycharacteristics"
         minSdkVersion 15
-        targetSdkVersion 29
+        targetSdkVersion 30
     }
 
     buildTypes {

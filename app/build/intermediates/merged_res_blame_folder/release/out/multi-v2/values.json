@@ -1,0 +1,42 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,11,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,4,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,496,-1",
+                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,39,-1",
+                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,531,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,161,226,283,346,399,450,490",
+                        "endColumns": "52,52,64,56,62,52,50,39,44",
+                        "endOffsets": "103,156,221,278,341,394,445,485,530"
+                    }
+                },
+                {
+                    "source": "/Users/israelins/Documents/Programacao.nosync/3rd/MultipleDisplays/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
+                    },
+                    "to": {
+                        "startLines": "11,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "535,618",
+                        "endLines": "13,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "613,685"
+                    }
+                }
+            ]
+        }
+    ]
+}

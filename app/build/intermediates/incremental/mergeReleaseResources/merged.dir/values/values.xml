@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="actual_label">Dimensions:</string>
+    <string name="app_name">Characteristics</string>
+    <string name="density_factor_label">Density factor:</string>
+    <string name="density_label">Pixel Denisty:</string>
+    <string name="device_pixels_label">DP Dimensions:</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="size">normal</string>
+    <string name="size_label">Size:</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        
+    </style>
+</resources>
