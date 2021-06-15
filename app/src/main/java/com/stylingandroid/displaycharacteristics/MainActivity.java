@@ -15,8 +15,9 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		populate(findViewById(R.id.main), getApplicationContext().getDisplay());
-		m_presentationHelper = new PresentationHelper(getApplicationContext());
+		populate(findViewById(R.id.main), getWindowManager()
+				.getDefaultDisplay());
+		m_presentationHelper = new PresentationHelper(this);
 	}
 
 	@Override
@@ -26,7 +27,7 @@ public class MainActivity extends Activity {
 	}
 
 	@SuppressLint("DefaultLocale")
-	private static void populate(View v, Display display) {
+	private void populate(View v, Display display) {
 		DisplayMetrics metrics = new DisplayMetrics();
 		display.getMetrics(metrics);
 		float density = metrics.density;
