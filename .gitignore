@@ -2,3 +2,14 @@
 /gen
 .project
 .classpath
+.gradle/
+app/build/
+
+*.iml
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
